@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>SQL Project</title>
+</head>
+<body>
+    <section class="all_section bg-[#333333] w-full min-h-screen relative">
+
+    <section class="nav_section">
+        <nav class="navbar  mt-[-1%] p-4 bg-[#4d4d4d] z-10 relative">
+            <!-- Hamburger Icon for Mobile -->
+            <div class="hamburger md:hidden cursor-pointer" onclick="toggleMenu()">
+                <div class="line w-6 h-[2px] bg-[#D3D3D3] mb-1"></div>
+                <div class="line w-6 h-[2px] bg-[#D3D3D3] mb-1"></div>
+                <div class="line w-6 h-[2px] bg-[#D3D3D3]"></div>
+            </div>
+
+            <!-- Navbar Menu Items -->
+            <ul id="menu" class="hidden md:flex  flex-wrap  mt-[20px] justify-center gap-4 md:gap-6">
+                <li class="list text-[#D3D3D3] hover:text-[#f9a44f] font-sans cursor-pointer"><a href="#Home">HOME</a></li>
+                <li class="list text-[#D3D3D3] hover:text-[#f9a44f] font-sans cursor-pointer"><a href="#Data_view">DATA VIEW</a></li>
+                <li class="list text-[#D3D3D3] hover:text-[#f9a44f] font-sans cursor-pointer"><a href="#Queries">QUERIES</a></li>
+                <li class="list text-[#D3D3D3] hover:text-[#f9a44f] font-sans cursor-pointer"><a href="#Conclusion">CONCLUSION</a></li>
+            </ul>
+        </nav>
+    </section>
+        
+        <!-- Home Section -->
+ <section id="Home" class="home_section mt-[5%] relative px-4 sm:px-6 md:px-8">
+ <div class="home text-center relative z-10">
+  <h1 class="text-[#FFFFFF] font-bold font-serif text-[28px] sm:text-[32px] md:text-[36px] lg:text-[40px] pt-10">
+  SQL PROJECT ON PIZZA SALES
+  </h1> 
+ <p class="text-center mt-10 sm:mt-[24px] md:mt-[28px] text-[#FFFDD0] font-sans font-semibold max-w-[80%] sm:max-w-[70%] md:max-w-[600px] mx-auto">
+   "In this project, I used various SQL queries to analyze data from a sample pizza sales database. My focus was on answering specific questions related to pizza sales, allowing me to extract useful insights and summarize important information. Through this analysis, I was able to perform calculations that highlight sales trends and help understand customer preferences."
+</p> 
+ </div> 
+
+            <!-- Background Image with Overlay -->
+ <div class="absolute inset-0 bottom-0 h-[500px] sm:h-[350px] md:h-[400px] lg:h-[500px]">
+ <img class="w-full h-full object-cover filter blur-sm" src="Assets/bg_img.png" alt="Pizza Sales Background">
+  <div class="absolute inset-0 bg-[#3a3a3a] opacity-60"></div> <!-- Overlay -->
+    </div>
+     </section>
+
+
+ <section id="Data_view" class="data_view relative mt-[14%] sm:mt-14 md:mt-20 lg:mt-28 xl:mt-32 flex justify-center px-4 sm:px-6 md:px-8">
+ <div class="data_overviewv w-full h-full max-w-[100%] mt-[22%]">
+ <h1 class="data_heading text-[#ffffff] font-serif font-bold text-center text-[24px] sm:text-[28px] md:text-[32px] lg:text-[36px]">
+                    Data Model Overview
+                </h1>
+  <div class="data_model  mt-4 sm:mt-6 md:mt-8 flex justify-center">
+                    <img src="Assets/Data.png" alt="Data Model" class="w-full max-w-[95%] h-full sm:max-w-[80%] md:max-w-[70%] lg:max-w-[60%] xl:max-w-[50%] object-contain">
+</div>
+</div>
+  </section>
+        
+<section class="sql_queries mt-[5%]">
+ <section id="Queries" class="queries text-center px-4 sm:px-6 md:px-8 lg:px-12">
+<h1 class="text-[#ffffff] font-serif font-bold text-[24px] sm:text-[28px] md:text-[32px] lg:text-[36px]">
+                SQL Queries and Analysis
+            </h1>
+        
+            <!-- Problem Statement 1 -->
+ <div class="div_Q1 border-b-4 border-[#f9a44f] flex flex-col justify-center items-center gap-4 mt-8 sm:mt-10 p-4">
+ <h2 class="text-[#FFFDD0] text-[20px] sm:text-[22px] md:text-[24px]">Problem Statement 1:</h2>
+    <p class="text-[#D3D3D3] text-[16px] sm:text-[18px] md:text-[20px]">Retrieve the total number of orders placed.</p>
+     <h2 class="text-[#FFFDD0] text-[20px] sm:text-[22px] md:text-[24px] mt-4">Query Solution:</h2>
+        
+ <div class="img_solution flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-12 mt-4">
+ <div class="Input">
+ <p class="text-[#D3D3D3] text-[16px] sm:text-[18px] md:text-[20px] p-2">Input</p>
+<img src="Assets/First_input.png" class="shadow-orange-glow rounded-lg max-w-full h-auto" alt="">
+ </div>
+ <div class="output">
+ <p class="text-[#D3D3D3] text-[16px] sm:text-[18px] md:text-[20px] p-2">Output</p>
+                        <img src="Assets/First_output.png" class="shadow-orange-glow rounded-lg max-w-full h-auto" alt="">
+ </div>
+ </div>
+        
+ <h2 class="text-[#FFFDD0] text-[20px] mt-[2%]  sm:text-[22px] md:text-[24px] mt-6">Explanation of the Query:</h2>
+<p class="text-[#D3D3D3] text-[14px] sm:text-[16px] md:text-[18px] text-center w-[90%] sm:w-[80%] lg:w-[60%] p-4 mx-auto">
+                    This SQL query counts the total number of orders in the orders table by using the COUNT() function on the order_id field. It provides a summary of the order volume in the database, labeled as Total_no_orders.
+ </p>
+ </div>
+ <div class="div_Q2 border-b-4 border-[#f9a44f] flex flex-col justify-center items-center gap-4 mt-8 sm:mt-10 p-4">
+  <h2 class="text-[#FFFDD0] text-[20px] sm:text-[22px] md:text-[24px]">Problem Statement 2 : </h2>
+<p class="text-[#D3D3D3] text-[16px] sm:text-[18px] md:text-[20px]">Calculate the total revenue generated from pizza sales.</p>
+ <h2 class="text-[#FFFDD0] text-[20px] sm:text-[22px] md:text-[24px]">Query Solution :</h2>
+ <div class="img_solution flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-12 mt-4">
+        <div class="Input">
+  <p class="text-[#D3D3D3] text-[16px] sm:text-[18px] md:text-[20px]">Input</p>
+      <img src="Assets/2nd_input.png"  class="shadow-orange-glow rounded-lg"  alt="">
+ </div>
+<div class="output mt-[40px]">
+<p class="text-[#D3D3D3] text-[16px] sm:text-[18px] md:text-[20px]">Output</p>
+  <img src="Assets/2nd_output.png" class="shadow-orange-glow rounded-lg"" alt="">
+        
+  </div>
+               
+ </div>
+ <h2 class="text-[#FFFDD0] text-[20px] mt-[2%]  sm:text-[22px] md:text-[24px]">Explaination of the query :</h2>
+ <p class="text-[#D3D3D3] text-[14px] sm:text-[16px] md:text-[18px] text-center w-[90%] sm:w-[80%] lg:w-[60%] p-4 mx-auto">This SQL query calculates the total revenue generated from pizza sales. It does this by multiplying the quantity of each pizza ordered (from the order_details table) by its price (from the pizzas table). The SUM() function aggregates the revenue for all orders, and the result is rounded to two decimal places for clarity. The final output is labeled as Total_revenue, providing a clear overview of the sales performance.</p>     
+ </div>
+
+ <div class="div_Q3 border-b-4 border-[#f9a44f] flex flex-col justify-center items-center gap-4 mt-8 sm:mt-10 p-4">
+    <h2 class="text-[#FFFDD0] text-[20px] sm:text-[22px] md:text-[24px]">Problem Statement 3 : </h2>
+     <p class="text-[#D3D3D3] text-[16px] sm:text-[18px] md:text-[20px]">Identify the highest-priced pizza.</p>
+      <h2 class="text-[#FFFDD0] text-[20px] sm:text-[22px] md:text-[24px]">Query Solution :</h2>
+       <div class="img_solution flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-12 mt-4">
+       <div class="Input">
+        <p class="text-[#D3D3D3] text-[16px] sm:text-[18px] md:text-[20px]">Input</p>
+                    <img src="Assets/3rd_input.png"  class="shadow-orange-glow rounded-lg"  alt="">
+         </div>
+         <div class="output mt-[40px]">
+           <p class="text-[#D3D3D3] text-[16px] sm:text-[18px] md:text-[20px]">Output</p>
+          <img src="Assets/3rd_output.png" class="shadow-orange-glow rounded-lg"" alt="">
+            
+         </div>
+                   
+      </div>
+       <h2 class="text-[#FFFDD0] text-[20px] mt-[2%] sm:text-[22px] md:text-[24px]">Explaination of the query :</h2>
+             <p class="text-[#D3D3D3] text-[14px] sm:text-[16px] md:text-[18px] text-center w-[90%] sm:w-[80%] lg:w-[60%] p-4 mx-auto">This SQL query retrieves the name and price of the most expensive pizza from the database. It joins the pizza_types and pizzas tables on the pizza_type_id to access the relevant pizza information. The results are ordered by price in descending order, ensuring that the highest-priced pizza appears at the top. The LIMIT 1 clause restricts the output to only the most expensive pizza, allowing for a quick identification of the top item on the menu.</p>
+            
+        
+              </div>
+<div class="div_Q4 border-b-4 border-[#f9a44f] flex flex-col justify-center items-center gap-4 mt-8 sm:mt-10 p-4">
+      <h2 class="text-[#FFFDD0] text-[20px] sm:text-[22px] md:text-[24px]">Problem Statement 4 : </h2>
+         <p class="text-[#D3D3D3] text-[16px] sm:text-[18px] md:text-[20px]">Identify the most common pizza size ordered.</p>
+         <h2 class="text-[#FFFDD0] text-[20px] sm:text-[22px] md:text-[24px]">Query Solution :</h2>
+             <div class="img_solution flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-12 mt-4">
+             <div class="Input">
+           <p class="text-[#D3D3D3] text-[16px] sm:text-[18px] md:text-[20px]">Input</p>
+                        <img src="Assets/4rth_input.png"  class="shadow-orange-glow rounded-lg"  alt="">
+                </div>
+                <div class="output mt-[40px]">
+      <p class="text-[#D3D3D3] text-[16px] sm:text-[18px] md:text-[20px]">Output</p>
+          <img src="Assets/4rth_output.png" class="shadow-orange-glow rounded-lg"" alt="">
+  
+                </div>
+                       
+       </div>
+                      <h2 class="text-[#FFFDD0] text-[20px] mt-[2%]  sm:text-[22px] md:text-[24px]">Explaination of the query :</h2>
+  <p class="text-[#D3D3D3] text-[14px] sm:text-[16px] md:text-[18px] text-center w-[90%] sm:w-[80%] lg:w-[60%] p-4 mx-auto">This SQL query identifies the most commonly ordered pizza sizes from the database. It joins the pizzas table with the order_details table using the pizza_id to link the relevant information. The query counts the number of orders for each pizza size using the COUNT() function and groups the results by pizza size. The output is then ordered in descending order of the count, highlighting the most frequently ordered pizza sizes at the top of the results.</p>
+                
+    </div>
+   <div class="div_Q5 border-b-4 border-[#f9a44f] flex flex-col justify-center items-center gap-4 mt-8 sm:mt-10 p-4">
+     <h2 class="text-[#FFFDD0] text-[20px] sm:text-[22px] md:text-[24px]">Problem Statement 5 : </h2>
+     <p class="text-[#D3D3D3] text-[16px] sm:text-[18px] md:text-[20px]">List the top 5 most ordered pizza types along with their quantities.</p>
+     <h2 class="text-[#FFFDD0] text-[20px] sm:text-[22px] md:text-[24px]">Query Solution :</h2>
+      <div class="img_solution flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-12 mt-4">
+         <div class="Input">
+          <p class="text-[#D3D3D3] text-[16px] sm:text-[18px] md:text-[20px]">Input</p>
+         <img src="Assets/5th_input.png"  class="shadow-orange-glow rounded-lg"  alt="">
+                    </div>
+       <div class="output mt-[40px]">
+          <p class="text-[#D3D3D3] text-[16px] sm:text-[18px] md:text-[20px]">Output</p>
+             <img src="Assets/5th_output.png" class="shadow-orange-glow rounded-lg"" alt="">
+                    
+</div>
+                           
+                          </div>
+<h2 class="text-[#FFFDD0] text-[20px] mt-[2%]  sm:text-[22px] md:text-[24px]">Explaination of the query :</h2>
+                          <p class="text-[#D3D3D3] text-[14px] sm:text-[16px] md:text-[18px] text-center w-[90%] sm:w-[80%] lg:w-[60%] p-4 mx-auto">This SQL query identifies the top five most ordered pizzas. It creates a temporary table that combines the pizzas and pizza_types tables to get pizza names and IDs. It then joins this table with order_details to count the total orders (Pizza_Orders) and total quantity sold (Quantity) for each pizza. The results are grouped by pizza name and sorted in descending order based on the number of orders, showcasing the most popular pizzas.</p>
+
+                    
+                    
+                               </div>
+        <div class="div_Q6 border-b-4 border-[#f9a44f] flex flex-col justify-center items-center gap-4 mt-8 sm:mt-10 p-4">
+           <h2 class="text-[#FFFDD0] text-[20px] sm:text-[22px] md:text-[24px]">Problem Statement 6 : </h2>
+            <p class="text-[#D3D3D3] text-[16px] sm:text-[18px] md:text-[20px]">Join the necessary tables to find the total quantity of each pizza category ordered.</p>
+            <h2 class="text-[#FFFDD0] text-[20px] sm:text-[22px] md:text-[24px]">Query Solution :</h2>
+                <div class="img_solution flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-12 mt-4">
+                  <div class="Input">
+                                    <p class="text-[#D3D3D3] text-[16px] sm:text-[18px] md:text-[20px]">Input</p>
+                                <img src="Assets/6th_input.png"  class="shadow-orange-glow rounded-lg"  alt="">
+                        </div>
+                        <div class="output mt-[40px]">
+                            <p class="text-[#D3D3D3] text-[16px] sm:text-[18px] md:text-[20px]">Output</p>
+                            <img src="Assets/6th_output.png" class="shadow-orange-glow rounded-lg"" alt="">
+                        
+                        </div>
+                               
+                              </div>
+                              <h2 class="text-[#FFFDD0] text-[20px] mt-[2%]  sm:text-[22px] md:text-[24px]">Explaination of the query :</h2>
+              <p class="text-[#D3D3D3] text-[14px] sm:text-[16px] md:text-[18px] text-center w-[90%] sm:w-[80%] lg:w-[60%] p-4 mx-auto">This SQL query sums the total quantity of pizzas ordered by category. It creates a temporary table that links pizzas with pizza_types to get pizza categories. The query then joins with order_details to calculate the total quantity for each category, ordering the results in descending order to highlight the most popular categories.</p>
+                        
+                        
+                                   </div>
+  <div class="div_Q7 border-b-4 border-[#f9a44f] flex flex-col justify-center items-center gap-4 mt-8 sm:mt-10 p-4">
+    <h2 class="text-[#FFFDD0] text-[20px] sm:text-[22px] md:text-[24px]">Problem Statement 7 : </h2>
+     <p class="text-[#D3D3D3] text-[16px] sm:text-[18px] md:text-[20px]">Determine the distribution of orders by hour of the day.</p>
+      <h2 class="text-[#FFFDD0] text-[20px] sm:text-[22px] md:text-[24px]">Query Solution :</h2>
+      <div class="img_solution flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-12 mt-4">
+     <div class="Input">
+        <p class="text-[#D3D3D3] text-[16px] sm:text-[18px] md:text-[20px]">Input</p>
+          <img src="Assets/7th_input.png"  class="shadow-orange-glow rounded-lg"  alt="">
+             </div>
+         <div class="output mt-[40px]">
+         <p class="text-[#D3D3D3] text-[16px] sm:text-[18px] md:text-[20px]">Output</p>
+          <img src="Assets/7th_output.png" class="shadow-orange-glow rounded-lg"" alt="">
+                            
+          </div>
+                   
+                                   
+          </div>
+          <h2 class="text-[#FFFDD0] text-[20px] mt-[2%]  sm:text-[22px] md:text-[24px]">Explaination of the query :</h2>
+          <p class="text-[#D3D3D3] text-[14px] sm:text-[16px] md:text-[18px] text-center w-[90%] sm:w-[80%] lg:w-[60%] p-4 mx-auto">
+          This SQL query counts the number of orders placed during each hour of the day. It extracts the hour from the order_time using the HOUR() function and groups the results by hour. The query then returns the total count of orders for each hour, providing insights into peak ordering times.
+      
+        </p>
+                            
+        </div>
+<div class="div_Q8 border-b-4 border-[#f9a44f] flex flex-col justify-center items-center gap-4 mt-8 sm:mt-10 p-4">
+ <h2 class="text-[#FFFDD0] text-[20px] sm:text-[22px] md:text-[24px]">Problem Statement 8 : </h2>
+ <p class="text-[#D3D3D3] text-[16px] sm:text-[18px] md:text-[20px]">Join relevant tables to find the category-wise distribution of pizzas.</p>
+  <h2 class="text-[#FFFDD0] text-[20px] sm:text-[22px] md:text-[24px]">Query Solution :</h2>
+   <div class="img_solution flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-12 mt-4">
+     <div class="Input">
+      <p class="text-[#D3D3D3] text-[16px] sm:text-[18px] md:text-[20px]">Input</p>
+                                        <img src="Assets/8th_input.png"  class="shadow-orange-glow rounded-lg"  alt="">
+    </div>
+       <div class="output mt-[40px]">
+       <p class="text-[#D3D3D3] text-[16px] sm:text-[18px] md:text-[20px]">Output</p>
+          <img src="Assets/8th_output.png" class="shadow-orange-glow rounded-lg"" alt="">
+     </div>
+  </div>
+     <h2 class="text-[#FFFDD0] text-[20px] mt-[2%]  sm:text-[22px] md:text-[24px]">Explaination of the query :</h2>
+       <p class="text-[#D3D3D3] text-[14px] sm:text-[16px] md:text-[18px] text-center w-[90%] sm:w-[80%] lg:w-[60%] p-4 mx-auto">The first query retrieves all data from the pizza_types table. The second query counts the number of pizza types in each category, grouping the results by category. This helps identify how many different pizza types exist within each category.</p>
+ </div>
+ <div class="div_Q9 border-b-4 border-[#f9a44f] flex flex-col justify-center items-center gap-4 mt-8 sm:mt-10 p-4">
+ <h2 class="text-[#FFFDD0] text-[20px] sm:text-[22px] md:text-[24px]">Problem Statement 9 : </h2>
+ <p class="text-[#D3D3D3] text-[16px] sm:text-[18px] md:text-[20px]">Group the orders by date and calculate the average number of pizzas ordered per day.</p>
+             <h2 class="text-[#FFFDD0] text-[20px] sm:text-[22px] md:text-[24px]">Query Solution :</h2>
+  <div class="img_solution flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-12 mt-4">
+ <div class="Input">
+ <p class="text-[#D3D3D3] text-[16px] sm:text-[18px] md:text-[20px]">Input</p>
+    <img src="Assets/9th_input.png"  class="shadow-orange-glow rounded-lg"  alt="">
+      </div>
+      <div class="output mt-[40px]">
+      <p class="text-[#D3D3D3] text-[16px] sm:text-[18px] md:text-[20px]">Output</p>
+         <img src="Assets/9th_output.png" class="shadow-orange-glow rounded-lg"" alt="">
+                                    
+      </div>
+                                           
+          </div>
+      <h2 class="text-[#FFFDD0] mt-[2%] text-[20px] sm:text-[22px] md:text-[24px]">Explaination of the query :</h2>
+         <p class="text-[#D3D3D3] text-[14px] sm:text-[16px] md:text-[18px] text-center w-[90%] sm:w-[80%] lg:w-[60%] p-4 mx-auto">This SQL query calculates the average number of pizza orders per day. It first creates a temporary table that sums the total quantity of pizza orders for each date from the orders and order_details tables. The outer query then computes the average of these daily totals, rounding the result to the nearest whole number, providing insights into daily order trends.</p>                           
+          </div>
+     <div class="div_Q10 border-b-4 border-[#f9a44f] flex flex-col justify-center items-center gap-4 mt-8 sm:mt-10 p-4">
+     <h2 class="text-[#FFFDD0] text-[20px] sm:text-[22px] md:text-[24px]">Problem Statement 10 : </h2>
+    <p class="text-[#D3D3D3] text-[16px] sm:text-[18px] md:text-[20px]">Determine the top 3 most ordered pizza types based on revenue.</p>
+      <h2 class="text-[#FFFDD0] text-[20px] sm:text-[22px] md:text-[24px]">Query Solution :</h2>
+        <div class="img_solution flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-12 mt-4">
+         <div class="Input">
+          <p class="text-[#D3D3D3] text-[16px] sm:text-[18px] md:text-[20px]">Input</p>
+           <img src="Assets/10th_input.png"  class="shadow-orange-glow rounded-lg"  alt="">
+            </div>
+              <div class="output mt-[40px]">
+            <p class="text-[#D3D3D3] text-[16px] sm:text-[18px] md:text-[20px]">Output</p>
+               <img src="Assets/10th_output.png" class="shadow-orange-glow rounded-lg"" alt="">
+                                        
+              </div>
+                                               
+                </div>
+    <h2 class="text-[#FFFDD0] mt-[2%]  text-[20px] sm:text-[22px] md:text-[24px]">Explaination of the query :</h2>
+       <p class="text-[#D3D3D3] text-[14px] sm:text-[16px] md:text-[18px] text-center w-[90%] sm:w-[80%] lg:w-[60%] p-4 mx-auto">This SQL query retrieves the top three pizza types based on total revenue generated. It joins the pizzas, order_details, and pizza_types tables to calculate the revenue for each pizza type by multiplying the price of the pizzas with the quantity ordered. The results are grouped by pizza type name and sorted in descending order of total revenue, highlighting the most profitable pizzas.</p>
+   </div>
+       <div class="div_Q11 border-b-4 border-[#f9a44f] flex flex-col justify-center items-center gap-4 mt-8 sm:mt-10 p-4">
+     <h2 class="text-[#FFFDD0] text-[20px] sm:text-[22px] md:text-[24px]">Problem Statement 11 : </h2>
+      <p class="text-[#D3D3D3] text-[16px] sm:text-[18px] md:text-[20px]">Calculate the percentage contribution of each pizza type to total revenue.</p>
+      <h2 class="text-[#FFFDD0] text-[20px] sm:text-[22px] md:text-[24px]">Query Solution :</h2>
+   <div class="img_solution flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-12 mt-4">
+ <div class="Input">
+ <p class="text-[#D3D3D3] text-[16px] sm:text-[18px] md:text-[20px]">Input</p>
+   <img src="Assets/11th_input.png"  class="shadow-orange-glow rounded-lg"  alt="">
+      </div>
+    <div class="output mt-[40px]">
+     <p class="text-[#D3D3D3] text-[16px] sm:text-[18px] md:text-[20px]">Output</p>
+      <img src="Assets/11th_output.png" class="shadow-orange-glow rounded-lg"" alt="">
+                                            
+         </div>
+                                                   
+        </div>
+          <h2 class="text-[#FFFDD0] mt-[2%]  text-[20px] sm:text-[22px] md:text-[24px]">Explaination of the query :</h2>
+           <p class="text-[#D3D3D3] text-[14px] sm:text-[16px] md:text-[18px] text-center w-[90%] sm:w-[80%] lg:w-[60%] p-4 mx-auto">This SQL query calculates the percentage of total sales revenue for each pizza category. It joins the pizza_types, pizzas, and order_details tables to sum the revenue for each category. The revenue is then divided by total sales (from a subquery) and multiplied by 100 to express it as a percentage. The results are grouped by category and sorted in descending order, highlighting the top revenue-generating categories.</p>
+                                    
+   </div>
+ <div class="div_Q12 border-b-4 border-[#f9a44f] flex flex-col justify-center items-center gap-4 mt-8 sm:mt-10 p-4">
+   <h2 class="text-[#FFFDD0] text-[20px] sm:text-[22px] md:text-[24px]">Problem Statement 12 : </h2>
+   <p class="text-[#D3D3D3] text-[16px] sm:text-[18px] md:text-[20px]">Analyze the cumulative revenue generated over time.</p>
+       <h2 class="text-[#FFFDD0] text-[20px] sm:text-[22px] md:text-[24px]">Query Solution :</h2>
+       <div class="img_solution flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-12 mt-4">
+             <div class="Input">
+       <p class="text-[#D3D3D3] text-[16px] sm:text-[18px] md:text-[20px]">Input</p>
+           <img src="Assets/12th_input.png"  class="shadow-orange-glow rounded-lg"  alt="">
+          </div>
+             <div class="output mt-[40px]">
+            <p class="text-[#D3D3D3] text-[16px] sm:text-[18px] md:text-[20px]">Output</p>
+             <img src="Assets/12th_output1.png" class="shadow-orange-glow rounded-lg"" alt="">
+                                                
+                 </div>
+          </div>
+     <h2 class="text-[#FFFDD0] mt-[2%]  text-[20px] sm:text-[22px] md:text-[24px]">Explaination of the query :</h2>
+       <p class="text-[#D3D3D3] text-[14px] sm:text-[16px] md:text-[18px] text-center w-[90%] sm:w-[80%] lg:w-[60%] p-4 mx-auto">This SQL query calculates the cumulative revenue from pizza sales over time. The inner query sums the revenue for each order date by joining the order_details, pizzas, and orders tables. The outer query then computes the running total of revenue ordered by order_date, rounding it to two decimal places. The result shows each order date alongside its cumulative revenue, allowing for insights into revenue trends over time.</p>                                                
+     </div>
+       <div class="div_Q13 border-b-4 border-[#f9a44f] flex flex-col justify-center items-center gap-4 mt-8 sm:mt-10 p-4">
+        <h2 class="text-[#FFFDD0] text-[20px] sm:text-[22px] md:text-[24px]">Problem Statement 13 : </h2>
+         <p class="text-[#D3D3D3] text-[16px] sm:text-[18px] md:text-[20px]">Determine the top 3 most ordered pizza types based on revenue for each pizza category.</p>
+         <h2 class="text-[#FFFDD0] text-[20px] sm:text-[22px] md:text-[24px]">Query Solution :</h2>
+          <div class="img_solution flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-12 mt-4">
+           <div class="Input">
+            <p class="text-[#D3D3D3] text-[16px] sm:text-[18px] md:text-[20px]">Input</p>
+              <img src="Assets/13th_input.png"  class="shadow-orange-glow rounded-lg"  alt="">
+             </div>
+              <div class="output mt-[40px]">
+              <p class="text-[#D3D3D3] text-[16px] sm:text-[18px] md:text-[20px]">Output</p>
+               <img src="Assets/13th_full_output.png" class="shadow-orange-glow rounded-lg"" alt="">
+                                                    
+                   </div>
+                                                           
+         </div>
+                                                          <h2 class="text-[#FFFDD0] mt-[2%] text-[20px] sm:text-[22px] md:text-[24px]">Explaination of the query :</h2>
+<p class = "text-[#D3D3D3] text-[14px] sm:text-[16px] md:text-[18px] text-center w-[90%] sm:w-[80%] lg:w-[60%] p-4 mx-auto">This SQL query retrieves the top three pizzas by revenue for each category. It first calculates total revenue for each pizza, then ranks them within their categories using the RANK() function. Finally, it filters the results to show only the highest-earning pizzas in each category, providing insights into the most profitable options.</p>
+                                                        
+  
+                                                               </div>
+ <div class="div_Q14 border-b-4 border-[#f9a44f] flex flex-col justify-center items-center gap-4 mt-8 sm:mt-10 p-4">
+                                                                <h2 class="text-[#FFFDD0] text-[20px] sm:text-[22px] md:text-[24px]">Problem Statement 13 [Another Approach]: </h2>
+     <p class="text-[#D3D3D3] text-[16px] sm:text-[18px] md:text-[20px]">
+       Determine the top 3 most ordered pizza types based on revenue for each pizza category.
+       </p>
+          <h2 class="text-[#FFFDD0] text-[20px] sm:text-[22px] md:text-[24px]">Query Solution :</h2>
+          <div class="img_solution flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-12 mt-4">
+            <div class="Input">
+         <p class="text-[#D3D3D3] text-[16px] sm:text-[18px] md:text-[20px]">Input</p>
+           <img src="Assets/output_13withcte_fun.png"  class="shadow-orange-glow rounded-lg"  alt="">
+             </div>
+           <div class="output mt-[40px]">
+          <p class="text-[#D3D3D3] text-[16px] sm:text-[18px] md:text-[20px]">Output</p>
+            <img src="Assets/13th_full_output.png" class="shadow-orange-glow rounded-lg"" alt="">
+        </div>
+                                                               
+      </div>
+                                                              <h2 class="text-[#FFFDD0] mt-[2%] text-[20px] sm:text-[22px] md:text-[24px]">Explaination of the query :</h2>
+   <p class="text-[#D3D3D3] text-[14px] sm:text-[16px] md:text-[18px] text-center w-[90%] sm:w-[80%] lg:w-[60%] p-4 mx-auto">
+                                                                This SQL query retrieves the top three pizzas by revenue for each category using Common Table Expressions (CTEs). The first CTE, revenue_per_pizza, calculates total revenue for each pizza by summing the quantity sold multiplied by the price. The second CTE, ranked_pizzas, ranks the pizzas within each category based on their revenue. Finally, the query filters the results to show only the top three pizzas in each category, highlighting the most profitable options.
+
+     </p>
+       </div>
+
+
+           </div>
+
+       </section>
+       <section id="Conclusion" class="conclusion text-[#ffffff] font-serif font-bold text-center text-[24px] sm:text-[28px] md:text-[32px] lg:text-[36px] p-4">
+
+<div class="conclude border-b-4 border-[#f9a44f] flex flex-col justify-center items-center gap-4 mt-8 sm:mt-10 p-4">
+    
+    <h1 class="text-[#ffffff] font-serif font-bold text-[24px] sm:text-[28px] md:text-[32px] lg:text-[36px]">
+        Conclusion
+        </h1>
+
+    <p class="text-[#D3D3D3] font-sans font-normal text-[14px] sm:text-[16px] md:text-[18px] text-center w-[90%] sm:w-[80%] lg:w-[60%] p-4 mx-auto">"Through this project, I gained valuable insights into pizza sales, revealing that  the most popular pizza type , the total revenue generated , top ordering time, etc. This journey enhanced my SQL skills, deepening my understanding of database management and data analysis techniques.</p>
+    <p class="text-[#D3D3D3] font-sans font-normal text-[14px] sm:text-[16px] md:text-[18px] text-center w-[90%] sm:w-[80%] lg:w-[60%] p-4 mx-auto">Overall, this project has been an enlightening experience, allowing me to apply theoretical knowledge to practical scenarios, and I look forward to continuing to refine my skills in data analysis and web development."</p>
+                        
+
+
+</div>
+
+</section>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
+ 
